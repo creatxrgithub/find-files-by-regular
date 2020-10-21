@@ -1,0 +1,26 @@
+{
+  "name": "find-files-by-regular",
+  "version": "1.0.0",
+  "description": "find files by regular expression",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creatxrgithub/find_files_by_regular.git"
+  },
+  "keywords": [
+    "find",
+    "files",
+    "by",
+    "regular",
+    "expression"
+  ],
+  "author": "creatxr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creatxrgithub/find_files_by_regular/issues"
+  },
+  "homepage": "https://github.com/creatxrgithub/find_files_by_regular#readme"
+}
