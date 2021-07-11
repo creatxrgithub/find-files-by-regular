@@ -1,6 +1,6 @@
 {
   "name": "find-files-by-regular",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "find files by regular expression",
   "main": "find-files-by-regular.js",
   "scripts": {

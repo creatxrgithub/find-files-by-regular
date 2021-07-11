@@ -1,9 +1,11 @@
 # find files by regular expression
 
 
+/**
+	if pattern is null or empty string, dirOnly will set to true by default
+*/
 
-function findFiles(startNode, pattern, ignoreCase=false, recursive=true)
-
+function findFiles(startNode, pattern, ignoreCase=false, recursive=true, dirOnly=false)
 
 npm install find-files-by-regular
 
