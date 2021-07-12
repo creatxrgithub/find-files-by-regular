@@ -35,7 +35,7 @@ function findFiles(startNode, pattern, ignoreCase=false, recursive=true, dirOnly
 						files.push(ofile);
 					}
 				} else if(fs.statSync(ofile).isDirectory()) {
-					if(recursive) findFiles(ofile, pattern, ignoreCase, recursive);  //爲了尾遞歸優化，深度優先的目錄深入遞歸的代碼當在最後一行
+					if(recursive) findFiles(ofile, pattern, ignoreCase, recursive, dirOnly);  //爲了尾遞歸優化，深度優先的目錄深入遞歸的代碼當在最後一行
 				}
 			}
 		}
@@ -55,7 +55,7 @@ function findFiles(startNode, pattern, ignoreCase=false, recursive=true, dirOnly
 					if(list[i].match(reg))	{
 						files.push(ofile);
 					}
-					if(recursive) findFiles(ofile, pattern, ignoreCase, recursive);  //爲了尾遞歸優化，深度優先的目錄深入遞歸的代碼當在最後一行
+					if(recursive) findFiles(ofile, pattern, ignoreCase, recursive, dirOnly);  //爲了尾遞歸優化，深度優先的目錄深入遞歸的代碼當在最後一行
 				}
 			}
 			if(startNode.match(reg)) {  //如果根目錄符合搜索條件
@@ -74,6 +74,7 @@ function findFiles(startNode, pattern, ignoreCase=false, recursive=true, dirOnly
  * pattern: regular expression for file 's name
  * ignoreCase: default is false
  * recursive: default is true
+ * dirOnly: default is false
  * @return
  * return: array of  files collection, if catch exception, will return empty array
  */
