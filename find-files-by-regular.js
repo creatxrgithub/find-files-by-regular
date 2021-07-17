@@ -76,7 +76,7 @@ function findFiles(startNode, pattern, ignoreCase=false, recursive=true, dirOnly
  * recursive: default is true
  * dirOnly: default is false
  * @return
- * return: array of  files collection, if catch exception, will return empty array
+ * return: array of  files collection, if catch exception, will return empty array or finded files before exception
  */
 function result(startNode, pattern, ignoreCase=false, recursive=true, dirOnly=false) {
 	try {
